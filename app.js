@@ -1,7 +1,7 @@
 const pokemon = require ("pokemon");
 
 const http = require("http");
-const PORT = 8000;
+const PORT = process.env.PORT;//take port aotomatically after deployment
 const hostname = "localhost";
 const server= http.createServer((req, res)=> {
 
